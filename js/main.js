@@ -2,7 +2,7 @@ var elModal = document.getElementById('modal');
 var elSignInBtn = document.getElementById('signin');
 var elCloseBtn = document.getElementById('close');
 var elSubBtn = document.getElementById('submit');
-var elInput = document.getElementsByTagName('input')
+var elInput = document.getElementsByTagName('input');
 
 function openModal() {
 elModal.style.display = 'block';
