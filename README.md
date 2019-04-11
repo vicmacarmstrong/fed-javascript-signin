@@ -13,9 +13,10 @@
 
 ## Advanced:
 
-5. When the user clicks `#submit`, only add the `.error` class to the elements that have a `value` of "" (blank, meaning any text will prevent an error)
+5. Modify the `#submit` element from `type="button"` to `type="submit"`. When the user triggers a `submit`, event, _prevent_ the form from proceeding with it's _default_ behavior.
+6. On submit, only add the `.error` class to the elements that have a `value` of "" (blank, meaning any text will prevent an error)
    - What happens if the user just adding spaces to the field? Find a function that will trim off the white spaces in a field to validate it.
-6. Prototype a validation by checking the two fields on `#submit`. If both are "valid" (not blank), close the `#modal`, remove the `#signin` and append `textContent` to the `#hello` heading so it reads "Welcome, [USERNAME]", in a font that's half the current size
+6. Prototype a validation by checking the two fields on `submit`. If both are "valid" (not blank), close the `#modal`, remove the `#signin` and append `textContent` to the `#hello` heading so it reads "Welcome, [USERNAME]", in a font that's half the current size
    - Consider the various ways we could validate both fields, including the use of a boolean `var` as a switch
 7. Try validating a field by adding/removing `.error` immediately after the cursor leaves one of the individual `<input>` (rather than on submit)
    - Consider this can be added individually to elements, but do so by writing one event listener/callback function using a loop
